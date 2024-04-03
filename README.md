@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This is a demo web page(ETELAB) where navigation bar redirects to another page with `react-router`.
+
+Using this demo website, you can search information getting data from another server with `http-proxy-middleware`.
+
+All UI components in this React SPA project are `MUI` components.
+
 ## Available Scripts
 
 In the project directory, you can run:
