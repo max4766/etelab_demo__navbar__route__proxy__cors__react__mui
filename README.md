@@ -2,11 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This is a demo web page(ETELAB) where navigation bar redirects to another page with `react-router`.
+This is a demo web page(ETELAB) where navigation bar redirects to another page with `react-router-dom`.
 
-Using this demo website, you can search information getting data from another server with `http-proxy-middleware`.
+Using this demo website, you can search information getting data from another server(localhost:8070) with `http-proxy-middleware`.
 
 All UI components in this React SPA project are `MUI` components.
+
+Here we need port 3000 as the demo website, 8070 as the server.
+
+(port 8070 used to be used for an acutal web development project, ETELAB)
+
+(can't provide you with the server source for port 8070 for now...)
 
 ## Getting Started
 
@@ -46,37 +52,19 @@ Congratulations! you can now see the view of this project!
 
 ## About the source
 
-- `src/app/layout.tsx` : 
-    
-    all page's fixed layout. in this project's case, 
+- `src/components/ContentReqAll.js` : when redirected to '/contentReqAll', shows search form and search result.
 
-    it's a top navigation bar which redirects you to other pages.
+since it's impossible to make a full packet to get the data from the server, added extra values in handleSearch function.
 
-- `src/app/page.tsx` : It's colored in GREY. main page which you can see as you first load the page. 
+uses `axios` to transfer and transmit data.
 
-- `src/app/testRequestManage/page.tsx` : a RED page if you click the first tab, 시험의뢰관리
+there are a few more functions here related to setting the packet and the datagrid. 
 
-- `src/app/sampleManage/page.tsx` : an ORANGE page if you click the second tab, 샘플관리
+- `src/components/Header.js` : source that stands for top and side navigation and it has functions for them. uses usenavigate to redirect. 
 
-- `src/app/nonConformanceReportManage/page.tsx` : a YELLOW page if you click the third tab, 부적합관리
+- `src/App.js` : when redirected it shows the element of route tag.
 
-- `src/app/specManage/page.tsx` : a GREEN page if you click the fourth tab, SPEC관리
-
-- `src/app/noticeBoard/page.tsx` : a BLUE page if you click the fifth tab, 게시판
-
-- `src/app/systemManage/page.tsx` : a DARK BLUE page if you click the sixth tab, 시스템관리
-
-- `src/app/systemSetting/page.tsx` : a PURPLE page if you click the last tab, 시스템설정
-
-and there are svg and png files in public folder's directory.
-
-and some other files that are related to configuration and settings...
-
-(frankly, those are not critical here)
-
-The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `src/setProxy.js` : this is required for CORS. since it gets data with proxy, the server enables you to get data from it.
 
 ## Learn More
 
