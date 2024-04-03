@@ -60,11 +60,15 @@ uses `axios` to transfer and transmit data.
 
 there are a few more functions here related to setting the packet and the datagrid. 
 
-- `src/components/Header.js` : source that stands for top and side navigation and it has functions for them. uses usenavigate to redirect. 
+- `src/components/Header.js` : source that stands for top and side navigation and it has functions for them. 
+
+uses usenavigate to redirect. 
 
 - `src/App.js` : when redirected it shows the element of route tag.
 
-- `src/setProxy.js` : this is required for CORS. since it gets data with proxy, the server enables you to get data from it.
+- `src/setProxy.js` : this is required for CORS. since it gets data with proxy, 
+
+the server enables you to get data from it.
 
 ## Learn More
 
