@@ -70,6 +70,20 @@ uses usenavigate to redirect.
 
 the server enables you to get data from it.
 
+## Goal
+
+The goal of this project was `To set up route for redirection and proxy for data communication when using react`
+
+Unlike Next.js, React doesn't provide you with ready-made features like auto route.
+
+ofc it takes more time and effort to make an ecosystem for these features so it might be inconvenient.
+
+It would be much more convenient if you use Next.js for this framework even provides SSR and DB connection as well.
+
+Yet, Using React is way more faster than MVC web development that uses vanilla HTML, CSS, Javascript.
+
+Also, you can seperate client and server side not even mentioning UI has no problems with blinking issues.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
