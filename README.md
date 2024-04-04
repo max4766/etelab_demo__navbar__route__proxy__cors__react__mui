@@ -35,15 +35,7 @@ npm install
 Next, run the development server with one of the commands below (npm recommended) :
 
 ```bash
-npm run dev
-```
-
-```bash
-yarn dev
-```
-
-```bash
-pnpm dev
+npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
