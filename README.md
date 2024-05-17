@@ -12,7 +12,7 @@ Here we need port 3000 as the demo website, 8070 as the server.
 
 (port 8070 used to be used for an acutal web development project, ETELAB)
 
-(if ETELAB is on localhost:8070, you can search information with inputs in localhost:3000 via CORS)
+(if ETELAB is on localhost:8070, you can search information with searchform in localhost:3000 via CORS)
 
 ## Getting Started
 
